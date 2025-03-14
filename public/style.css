@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "PokemonFont";
+  src: url("fonts/PokemonSolid.ttf") format("truetype");
+}
+
+body {
+  font-family: "PokemonFont", cursive;
+  text-align: center;
+  background-color: #e0f7fa;
+  color: #212121;
+}
+
+h1 {
+  background-color: #004d40;
+  padding: 15px;
+  border: 3px solid #00251a;
+  font-style: normal;
+  color: white;
+}
+
+.generations {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.generation-box {
+  background-color: #00796b;
+  padding: 20px;
+  border: 3px solid #004d40;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  min-width: 70px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.generation-box a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+}
+
+.generation-box:hover {
+  background-color: #004d40;
+  cursor: pointer;
+}
+
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 25px auto;
+}
+
+.pokemon-list div {
+  background-color: #4caf50;
+  padding: 20px;
+  border: 3px solid #2e7d32;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pokemon-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+}
+
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.pokemon-card {
+  background-color: #c8e6c9;
+  padding: 15px;
+  border-radius: 15px;
+  border: 4px solid #388e3c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 450px;
+}
+
+.pokemon-card img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+.pokemon-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-types,
+.pokemon-stats {
+  background-color: #81c784;
+  padding: 15px;
+  border: 3px solid #388e3c;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.pokemon-types h3,
+.pokemon-stats h3 {
+  background-color: #81c784;
+  padding: 10px;
+  border-radius: 5px;
+  color: #212121;
+  text-align: center;
+  border: 3px solid #388e3c;
+}
+
+button {
+  background-color: #1b5e20;
+  border: 3px solid #004d40;
+  padding: 15px;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #004d40;
+  cursor: pointer;
+}
