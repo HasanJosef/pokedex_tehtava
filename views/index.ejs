@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <h1>Pokedex</h1>
+    <%- include('partials/header') %>
 
-    <div class="generations">
-      <% generations.forEach((gen) => { %>
-      <div class="generation-box">
-        <a href="/generation/<%= gen.number %>"><%= gen.number %></a>
-      </div>
-      <% }); %>
-    </div>
+    <h1>Pokedex</h1>
+    <h2>Valitse generaation</h2>
+    <ul>
+      <% generations.forEach(generation => { %>
+      <li>
+        <a href="/generation/<%= generation.number %>"
+          >Generation <%= generation.roman %></a
+        >
+      </li>
+      <% }) %>
+    </ul>
+
+    <%- include('partials/footer') %>
   </body>
 </html>
